@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Blog</title>
+    <style>
+/*        html{font-size:62.5%;}*/
+       /*
+        #nav_txt  {
+            font-size:1.5rem;
+        }
+        #nav_txt h1{
+            font-size:4rem;
+        }*/
+        html{height:100vh; scroll-behavior: smooth;}
+        body{
+            display:flex; flex-direction: column;
+        }
+        :root{
+           --color:white;
+       }
+        #head_img{
+            background-image:linear-gradient(to right,rgba(0,0,0,0.5)50%,rgba(0,0,0,0)0%),url('https://i.pinimg.com/originals/31/fe/f5/31fef5fc7e73829cf18d93ecc63a931d.jpg');
+        background-size:cover;
+      height:60vh;
+      position:relative;
+        }
+        #img_txt{
+            position:absolute;
+            top:50%; 
+            transform: translatey(-50%);
+        }
+        
+        #anim::after{
+            content:'';
+            animation: anim 10s linear infinite;
+        }
+        
+        @keyframes anim{
+            0%{content:'gautam'; color:darkorange;}
+            20%{content:' a programer'; color:lightcoral;}
+            40%{content:'frontend developer'; color:darkcyan;}
+            60%{content:'developer'; color:cyan;}
+            100%{content:'web developer'; color:blueviolet;}
+        }
+       .card img:hover{
+           transform:translateY(-10px);
+       }
+       #bg-card{
+           background-image: linear-gradient(to bottom,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.2)0%),url('image/n2.png');
+           background-size:cover;
+       }
+       #arrowup{
+           position:fixed;
+           bottom:20px;
+           right:20px;
+           display:none;
+       }
+    </style>
+</head>
+<body class="">
+    
+<header id="head">
+    <nav id="nav">
+        <div class="text-center" id="nav_txt">
+      <h1>GAUTAM</h1>
+      <p>We web <span class="bg-dark text-white">developer</span></p>
+    </div>
+    </nav>
+
+    <div id="head_img">
+<div id="img_txt" class="text-white ps-2">
+    <h1>gautam</h1>
+    <h3>He is <spann id="anim"></spann></h3>
+</div>
+    </div>
+
+</header>
+
+
+<!---row-->
+<div class="container-fluid my-5">
+    <div class="text-center">
+        <h2>Best laptops in 2021</h2>
+        <p>Title discription 2021</p>
+    </div>
+    <div class="row">
+      <div class="col-10 mx-auto">
+          <div class="row gy-2">
+            <div class="col-md-7 col-12 mx-auto bg-light">
+                <div class="row gy-2 ">
+                    <div class="col-12 ">
+                        <div class="card p-2">
+                            <img src="image/lap3.webp" class="img-fluid ">
+                            <div class="card-body">
+                                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can bt</p>
+                                 <details>
+                                     <summary>more</summary>
+                                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+
+                                 </details>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" onclick="likefun(like1)" id="like1"><span class="bi bi-hand-thumbs-up"> </span>Like</button>
+                                    <button class="btn btn-outline-warning" data-bs-target="#colap1" data-bs-toggle="collapse"><span class="bi bi-envelope"> </span>Comments</button>
+                                </div>
+                               <div class="collapse" id="colap1">
+                                   <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n2.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p><span class="fw-bold">Gautam</span> Aug,10,2021, 12:00</p>
+                                        <p>keep it up gautam<span class="bi bi-heart-fill text-danger"></span></p>
+                                    </div>
+                                   </div>
+                                   <hr>
+                                   <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n2.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p><span class="fw-bold">Gautam</span> Aug,10,2021, 12:00</p>
+                                        <p>keep it up gautam<span class="bi bi-heart-fill text-danger"></span></p>
+                                    </div>
+                                   </div>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="card p-2 ">
+                            <img src="image/lap4.webp" class="img-fluid">
+                            <div class="card-body">
+                                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+                                <details>
+                                    <summary>more</summary>
+                               <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+
+                                </details>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" onclick="likefun(like2)" id="like2"><span class="bi bi-hand-thumbs-up"> </span>Like</button>
+                                    <button class="btn btn-outline-warning" data-bs-target="#colap2" data-bs-toggle="collapse"><span class="bi bi-envelope"> </span>Comments</button>
+                                </div>
+                               <div class="collapse" id="colap2">
+                                   <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n3.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p><span class="fw-bold">Gautam</span> Aug,11,2022, 12:00</p>
+                                        <p>Nice<span class="bi bi-flower3 text-warning"></span></p>
+                                    </div>
+                                   </div>
+                               </div> 
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 ">
+                        <div class="card p-2 ">
+                            <img src="image/lap3.webp" class="img-fluid">
+                            <div class="card-body">
+                                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+                                <details>
+                                    <summary>more</summary>
+                               <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+
+                                </details>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" onclick="likefun(like3)" id="like3"><span class="bi bi-hand-thumbs-up"> </span>Like</button>
+                                    <button class="btn btn-outline-warning" data-bs-target="#colap3" data-bs-toggle="collapse"><span class="bi bi-envelope"> </span>Comments</button>
+                                </div>
+                               <div class="collapse" id="colap3">
+                                   <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n3.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p><span class="fw-bold">Akshy kumar</span> Aug,11,2022, 12:00</p>
+                                        <p>wow<span class="bi bi-emoji-smile text-warning"></span></p>
+                                    </div>
+                                   </div>
+                                   <hr>
+                                   <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n6.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p><span class="fw-bold">Remo Dsouza</span> Aug,11,2022, 12:00</p>
+                                        <p>U will be in my next movie<span class="bi bi-emoji-smile text-warning"></span></p>
+                                    </div>
+                                   </div>
+                                   <hr>
+                                   <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n4.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p><span class="fw-bold">Narendar Modi</span> Aug,11,2022, 12:00</p>
+                                        <p>Next PM<span class="bi bi-emoji-angry text-danger"></span></p>
+                                    </div>
+                                   </div>
+                               </div> 
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto ">
+                <div class="row gy-4">
+                    <!--about me-->
+                    <div class="col-12 ">
+                        <div class="card p-2 shadow">
+                            <div class="card-header text-center">
+                                <h2>About me</h2>
+                            </div>
+                         <div id="bg-card">
+                         <div class="mt-5 bg-transparent">
+                          <p>i am gautam my name is gautam and name is everything so make ur name and god bless you</p>
+                         </div>
+                         </div>
+                        </div>
+                    </div>
+                    <!---popular posts-->
+                    <div class="col-12 ">
+                        <div class="card p-2 shadow">
+                            <div class="card-header text-center">
+                                <h2>Popular posts</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n2.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p class="fw-bold">Bill Gates</p>
+                                        <p>(CEO) microsoft</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n4.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p class="fw-bold">Bi0ll Gates</p>
+                                        <p>(CEO) of -----</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="image/n3.png" width="40">
+                                    </div>
+                                    <div class="ms-2">
+                                        <p class="fw-bold">Bill Gotm</p>
+                                        <p>(CEO) his body</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!---advertisment-->
+                    <div class="col-12">
+                    <div class="card p-2 shadow text-center">
+                        <div class="card-header">
+                            <h2>Advertisment</h2>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="py-5">ads show here</h3>
+                        </div>
+                    </div>
+                    </div>
+                    <!-----tags-->
+                    <div class='col-12'>
+                        <div class="card p-2 shadow text-center">
+                            <div class="card-header">
+                                <h2>Tags</h2>
+                            </div>
+                            <div class="card-body  ">
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">html</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">css</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">js</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">bootstrap</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">angular</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">react</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">jquery</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">typescript</a>
+                                <a href="#" class="badge rounded-pill bg-dark fs-5">mongo db</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!----follow me-->
+                    <div class="col-12">
+                        <div class="card p-2 shadow">
+                            <div class="card-header text-center">
+                                 <h2>Follow me</h2>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                        <a href="#"><span class="bi bi-facebook fs-3"></span></a>
+                            <a href="https://www.instagram.com/goutam010/"> <span class="bi bi-instagram fs-3"></span></a>
+                                <a href="https://bit.ly/3yuMj12"><span class="bi bi-whatsapp fs-3"></span></a>
+                                <a href="#">  <span class="bi bi-twitter fs-3"></span></a>
+                                <a href="mailto:gautamparchanda@gmail.com">  <span class="bi bi-envelope fs-3"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<!---arrowup-->
+
+<div>
+    <span onclick="ontop()" class="bi-arrow-up bg-dark text-white fs-3 rounded-circle " id="arrowup"></span>
+</div>
+
+
+
+
+<!----header-->
+<footer class="mt-auto bg-light text-center">
+    <h3>Web site by <span class="text-danger bi bi-hammer">Gautam</span> parchanda</h3>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+"use strict";
+
+var count=0;
+function likefun(parameter){
+    let like=parameter;
+    count++;
+    setTimeout(function(){
+                          if(count==1){
+                              like.innerHTML="Liked";
+                              count=0;
+                            }else if(count==2){
+                                like.innerHTML="<span class='bi bi-hand-thumbs-up'></span>Like";
+                                count=0;
+                            }
+                          },400);
+}
+
+
+
+
+
+/*on top*/
+document.onscroll=function(){scroll()};
+function scroll(){
+    let arrow=document.getElementById('arrowup');
+    if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+        arrow.style.display="block";
+    }else{
+        arrow.style.display="none";
+    }
+}
+function ontop(){
+    document.body.scrolltop=0;
+    document.documentElement.scrollTop=0;
+}
+</script>
+</body>
+</html>
